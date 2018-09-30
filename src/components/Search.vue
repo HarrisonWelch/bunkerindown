@@ -19,12 +19,15 @@
       <div id="map" class="map"></div>
     <!-- </v-card> -->
   </v-layout>
+  
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script> -->
 </template>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
 
 <script>
+import L from "leaflet"
+
 export default {
   name: 'Search',
   data () {
@@ -48,9 +51,9 @@ export default {
 
     this.tileLayer.addTo(this.map);
 
-    L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
+    // L.marker([51.5, -0.09]).addTo(this.map)
+    // .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    // .openPopup();
   }
 }
 </script>
